@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2B2B2B;
+  color: white;
+  height: 150px;
+}
+
+ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+li {
+  list-style-type: none;
+}
+
+.username-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  height: 50px;
+  width: 200px;
+}
+
+h1 {
+  padding: 4% 2%;
+  font-size: 3rem;
+  background-color: #EFEFEF;
+  color: #4D4D4D;
+
+}
+
+main {
+  background-color: #EFEFEF;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 475px);
+  grid-gap: 10px;
+}
+
+.box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.img-article {
+  height: 32%;
+}
+
+.img-article1 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+  url(images/charger.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.model-article, .description-article, .location-article, .price-article {
+  height: 17%;
+}
+
+.bid-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.number-bids-div {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  color: white;
+  align-items: center;
+}
+
+.bids-p {
+
+}
+
+.number-bids-p {
+  font-size: 2rem;
+}
+
+.bid-now-img {
+  width: 60px;
+  height: 60px;
+  margin: 4%
+}
+
+
+.model-article, .description-article, .location-article, .price-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
