@@ -4,6 +4,8 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+/*MOVE USERNAME P TO RIGHT*/
+
 header {
   display: flex;
   justify-content: space-between;
@@ -16,24 +18,68 @@ ul {
   display: flex;
   width: 50%;
   justify-content: space-between;
+  margin-top: 7%;
+  color: #8B8B8B;
+  width: 50%;
+  font-size: 1.5rem;
 }
 
 li {
   list-style-type: none;
 }
 
+.fa-users, .fa-list-ul, .fa-sort-down, .fa-user-circle {
+  color: #53AEF1;
+} 
+
+.fa-user-circle, .fa-sort-down {
+  font-size: 1.7rem;
+  margin: 0 3%;
+}
+
+.fas:hover {
+  color: white;
+  cursor: pointer;
+}
+
+li:hover { 
+  cursor: pointer;
+  color: white;
+}
+
+.auctions-li {
+  color: white; 
+}
+
 .username-div {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  margin: 0% 2% 1% 0;
+}
+
+.username-p {
+  display: flex;
+  align-items: center;
+  height: 40px;
+
+}
+
+.username-p:hover {
+  cursor: pointer;
+}
+
+.fa-sort-down{
+  margin-bottom: 10px;
 }
 
 .logo {
   height: 50px;
-  width: 200px;
+  width: 250px;
 }
 
 h1 {
-  padding: 4% 2%;
+  padding: 3% 2%;
   font-size: 3rem;
   background-color: #EFEFEF;
   color: #4D4D4D;
@@ -46,17 +92,21 @@ main {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 475px);
   grid-gap: 10px;
+  padding: 0 2%;
 }
 
 .box {
   background-color: white;
   display: flex;
   flex-direction: column;
+  -moz-box-shadow:    inset 0 0 5px #000000;
+  -webkit-box-shadow: inset 0 0 5px #000000;
+  box-shadow:         inset 0 0 5px #000000;
 
 }
 
 .img-article {
-  height: 32%;
+  height: 40%;
 }
 
 .img-article1 {
@@ -69,10 +119,6 @@ main {
   background-position: center;
 }
 
-
-.model-article, .description-article, .location-article, .price-article {
-  height: 17%;
-}
 
 .bid-div {
   display: flex;
@@ -101,9 +147,137 @@ main {
   margin: 4%
 }
 
+.bid-now-img:hover {
+  cursor: pointer;
+  webkit-filter: blur(2px); 
+  filter: blur(2px);
 
-.model-article, .description-article, .location-article, .price-article {
+}
+
+
+.model-article, .location-article, .price-article {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 5%;
+  height: 16%;
 }
+
+.description-article {
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  height: 12%;
+}
+
+.model-p {
+  font-size: 1.2rem;
+  margin-bottom: 2%;
+}
+
+.end-date {
+  font-weight: 300;
+  font-size: .8rem;
+}
+
+.description-div {
+  font-size: .9rem;
+  padding: 3%;
+  font-weight: 300;
+  background-color: #EFEFEF;
+  border-radius: 2px;
+
+}
+
+.description-div:hover {
+  border: solid 2px #56B4F6;
+  cursor: pointer;
+  font-weight: 400;
+  padding-left: 1%;
+}
+
+.price-p {
+  color: #56B4F6;
+  font-size: 1.4rem;
+}
+
+.city-state-p {
+  font-size: 1.2rem;
+}
+
+
+
+
+
+
+.img-article2 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+  url(images/buickgsx.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-article3 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+  url(images/70mustang.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-article4 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+  url(images/chevelle.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-article5 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+  url(images/69camaro.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-article6 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+  url(images/plymouth.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-article7 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+  url(images/pontiac.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-article8 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+  url(images/shelby.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
