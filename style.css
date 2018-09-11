@@ -20,7 +20,6 @@ ul {
   justify-content: space-between;
   margin-bottom: 20px;
   padding-left: 2%;
-  padding: 0;
   width: 50%;
 }
 
@@ -95,9 +94,9 @@ main {
   background-color: white;
   display: flex;
   flex-direction: column;
-  box-shadow:         inset 0 0 5px #000000;
   -moz-box-shadow:    inset 0 0 5px #000000;
   -webkit-box-shadow: inset 0 0 5px #000000;
+  box-shadow:         inset 0 0 5px #000000;
 }
 
 .img-article {
@@ -132,14 +131,14 @@ main {
 }
 
 .bid-now-img {
+  width: 60px;
   height: 60px;
   margin: 4%
-  width: 60px;
 }
 
 .bid-now-img:hover {
-  content: url(images/bid-hover.png); 
   cursor: pointer;
+  content: url(images/bid-hover.png); 
 }
 
 .model-article, .location-article, .price-article {
@@ -164,8 +163,8 @@ main {
 }
 
 .end-date {
-  font-size: .8rem;
   font-weight: 300;
+  font-size: .8rem;
 }
 
 .description-div {
@@ -174,6 +173,7 @@ main {
   font-size: .9rem;
   font-weight: 300;
   padding: 3%;
+
 }
 
 .description-div:hover {
@@ -198,8 +198,8 @@ main {
       rgba(0, 0, 0, 0.25)
     ),
   url(images/buickgsx.jpg);
-  background-position: center;
   background-size: cover;
+  background-position: center;
 }
 
 .img-article3 {
@@ -278,9 +278,9 @@ main {
 
 @media(max-width: 1000px) {
   ul {
-    align-items: flex-start;
     flex-direction: column;
     justify-content: space-around;
+    align-items: flex-start;
   }
 }
 
@@ -293,7 +293,6 @@ main {
   ul {
     font-size: 1.2rem;
   }
-
 }
 
 @media(max-width: 570px) {
@@ -308,7 +307,6 @@ main {
 }
 
 @media(max-width: 500px) {
-
   main {
     grid-row-gap: 20px;
   }
@@ -332,9 +330,9 @@ main {
 
   .logo {
     align-self: center;
-    height: 70px;
-    margin-top: 55px;
-    width: 310px;
+    margin-top: 65px;
+    height: 60px;
+    width: 270px;
   }
 
   .username-p {
@@ -342,9 +340,9 @@ main {
   }
 
   ul {
-    align-items: center;
     align-items: flex-start;
     width: 100%;
+    align-items: center;
   }
 
   li {
